@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Koluhms Demo</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type="text/css">
+        ul {
+            box-sizing: border-box;
+        }
+
+        .clear {
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+	<h1>Koluhms Demo</h1>
+    <div class="clear">
+        <h3>Basic example using lists with sub lists:</h3>
+        <ul data-columns="3" data-selector="li" data-identifier="column" data-column-element="ul">
+            <li>Test #1</li>
+            <li>Test #2</li>
+            <li>Test #3</li>
+            <li>Test #4
+                <ul>
+                    <li>Sub Test #1</li>
+                    <li>Sub Test #2</li>
+                    <li>Sub Test #3</li>
+                    <li>Sub Test #4</li>
+                </ul>
+            </li>
+            <li>Test #5</li>
+            <li>Test #6</li>
+            <li>Test #7
+                <ul>
+                    <li>Sub Test #5</li>
+                    <li>Sub Test #6</li>
+                    <li>Sub Test #7</li>
+                    <li>Sub Test #8</li>
+                    <li>Sub Test #9</li>
+                    <li>Sub Test #10</li>
+                    <li>Sub Test #11</li>
+                    <li>Sub Test #12</li>
+                    <li>Sub Test #13</li>
+                </ul>
+            </li>
+            <li>Test #8
+                <ul>
+                    <li>Sub Test #14</li>
+                    <li>Sub Test #15</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <style type="text/css">
+        .column {
+            float: left;
+            width: 33%;
+        }
+    </style>
+    <div class="clear">
+        <h3>Same example using balance property:</h3>
+        <ul data-columns="3" data-selector="li" data-identifier="column-balance" data-column-element="ul" data-balance="true">
+            <li>Test #1</li>
+            <li>Test #2</li>
+            <li>Test #3</li>
+            <li>Test #4
+                <ul>
+                    <li>Sub Test #1</li>
+                    <li>Sub Test #2</li>
+                    <li>Sub Test #3</li>
+                    <li>Sub Test #4</li>
+                </ul>
+            </li>
+            <li>Test #5</li>
+            <li>Test #6</li>
+            <li>Test #7
+                <ul>
+                    <li>Sub Test #5</li>
+                    <li>Sub Test #6</li>
+                    <li>Sub Test #7</li>
+                    <li>Sub Test #8</li>
+                    <li>Sub Test #9</li>
+                    <li>Sub Test #10</li>
+                    <li>Sub Test #11</li>
+                    <li>Sub Test #12</li>
+                    <li>Sub Test #13</li>
+                </ul>
+            </li>
+            <li>Test #8
+                <ul>
+                    <li>Sub Test #14</li>
+                    <li>Sub Test #15</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <style type="text/css">
+        .column-balance {
+            float: left;
+            width: 33%;
+        }
+    </style>
+    <div class="clear">
+        <h3>Example using responsive media queries for alternate column counts:</h3>
+        <div data-columns="2,3,4" data-breaks="480,768,1140" data-selector="p" data-identifier="column-responsive" data-column-element="p" data-balance="true">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce semper libero a orci accumsan egestas.</p>
+            <p>Integer sit amet odio quis neque viverra ultricies quis vitae diam.</p>
+            <p>Nam quis ex ac nulla convallis fringilla. Phasellus eleifend ac leo id mattis.</p>
+            <p>Integer tincidunt magna eget cursus sodales. Aliquam vel massa velit.</p>
+        </div>
+    </div>
+    <style type="text/css">
+        @media only screen and (min-width: 480px) {
+            .column-responsive {
+                float: left;
+                width: 50%;
+            }
+        }
+
+        @media only screen and (min-width: 768px) {
+            .column-responsive {
+                width: 33%;
+            }
+        }
+
+        @media only screen and (min-width: 1140px) {
+            .column-responsive {
+                width: 25%;
+            }
+        }
+    </style>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="koluhms.min.js"></script>
+</body>
+</html>
