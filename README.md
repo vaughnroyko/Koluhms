@@ -1,4 +1,4 @@
-# Koluhms v1.0
+# Koluhms v1.0.1
 An automated column [kol-uh m] solution with support for height balancing, responsive styles and more. Configurable right in your HTML and CSS.
 
 Requires
@@ -144,6 +144,13 @@ Demo
 --------------
 
 [Demo Link](http://htmlpreview.github.io/?https://github.com/vaughnroyko/Koluhms/blob/master/demo.html)
+
+Changelog
+--------------
+
+**v1.0.1**
+
+- Removed a rogue ``</ul>`` - now uses the proper column-element data.
 
 License
 --------------
