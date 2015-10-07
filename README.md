@@ -148,6 +148,10 @@ Demo
 Changelog
 --------------
 
+**v1.1**
+
+- Added numbered and first/last classes to columns. Will now output in this format for example: ``class="column column-1 column-first"``
+
 **v1.0.1**
 
 - Removed a rogue ``</ul>`` - now uses the proper column-element data.

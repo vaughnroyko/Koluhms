@@ -1,7 +1,7 @@
 /*!
  * Koluhms
  * An automated column [kol-uh m] solution with support for height balancing, responsive styles and more. Configurable right in your HTML and CSS.
- * Version: 1.0.1 (October 6th, 2015)
+ * Version: 1.1 (October 6th, 2015)
  * requires jQuery
  */
 
@@ -57,7 +57,13 @@ $(function () {
                 }
 
                 for (var i = 0; i < columns; i++) {
-                    container.append('<' + columnElement + ' class="' + identifier + '"></' + columnElement + '>');
+                    var identifierClass = " " + identifier + '-' + (i + 1);
+                    if (i === 0) {
+                        identifierClass += " " + identifier + "-first";
+                    } else if (i === columns - 1) {
+                        identifierClass += " " + identifier + "-last";
+                    }
+                    container.append('<' + columnElement + ' class="' + identifier + identifierClass + '"></' + columnElement + '>');
                 }
 
                 var columnCount = 0;
